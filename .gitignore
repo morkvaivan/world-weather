@@ -1,0 +1,9 @@
+### JetBrains template
+## Directory-based project format:
+.idea/
+
+### Node template
+# Dependency directory
+node_modules
+
+### Custom

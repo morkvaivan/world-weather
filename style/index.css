@@ -1,0 +1,118 @@
+html,
+body,
+#widget_weather,
+#widget_weather div:first-child { height: 100%; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 300 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+}
+
+.cities_bar,
+.form,
+.form input:last-child { background-color: #1d2339; }
+
+.cities_bar {
+    margin: 0;
+    padding: 0;
+}
+
+.cities_bar li {
+    position: relative;
+    display: inline-block;
+}
+
+.cities_bar li a {
+    padding: 8px 12px;
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.error_popUp button {
+    color: #1d2339;
+    background-color: #fff;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+.cities_bar li button {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    padding: 0;
+    font-size: 1.2rem;
+    color: red;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.cities_bar li a:hover,
+.cities_bar li a.active {
+    color: #1d2339;
+    background-color: #fff;
+}
+
+.error_popUp,
+.error_popUp button:hover,
+.weather_info_screen span:last-child { color: #f00; }
+
+.form { padding-top: 2%;
+    margin: 0 auto}
+
+.form input:first-child {
+    height: 40px;
+    width: 200px;
+    margin-left: 43%;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    border: 1px solid #1d2339;
+    border-radius: 10px;
+}
+
+.error_popUp button:focus,
+.cities_bar li button,
+.form input:last-child:focus,
+.form input:first-child:focus { outline: none; }
+
+.form input:last-child {
+    height: 50px;
+    width: 50px;
+    background-image: url("img/find.png");
+    border: none;
+    cursor: pointer;
+}
+
+.weather_info_screen {
+    height: 60%;
+}
+
+.weather_info_screen p {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 1%;
+    font-size: 1.1rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #1d2339;
+}
+
+.weather_cold,
+.weather_hot { background-size: cover; }
+
+.weather_cold { background-image: url("img/cold.jpg"); }
+
+.weather_hot { background-image: url("img/warm.jpg"); }
+
+.error_popUp {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
